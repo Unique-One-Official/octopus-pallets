@@ -23,19 +23,19 @@ serde = { version = "1.0.119", default-features = false, features = ["derive"] }
 serde_bytes = { version = "0.11", default-features = false, features = ["alloc"] }
 serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
 
-frame-benchmarking = { default-features = false,  version = "3.1.0", optional = true }
-frame-support = { default-features = false, version = "3.0.0" }
-frame-system = { default-features = false,  version = "3.0.0" }
-pallet-assets = { default-features = false, version = "3.0.0" }
-pallet-balances = { default-features = false, version = "3.0.0" }
-pallet-session = { default-features = false, version = "3.0.0" }
-sp-core = { default-features = false, version = "3.0.0" }
-sp-io = { default-features = false, version = "3.0.0" }
-sp-runtime = { default-features = false, version = "3.0.0" }
-sp-std = { default-features = false, version = "3.0.0" }
+frame-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8', default-features = false,  optional = true }
+frame-support = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+frame-system = { default-features = false,  git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+pallet-assets = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+pallet-balances = { default-features = false, vgit = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+pallet-session = { default-features = false, features = ['historical'], git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+sp-core = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+sp-io = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8'}
+sp-runtime = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
+sp-std = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
 
 [dev-dependencies]
-sp-keystore = { default-features = false, version = "0.9.0" }
+sp-keystore = { default-features = false, git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.8' }
 
 [features]
 default = ["std"]
